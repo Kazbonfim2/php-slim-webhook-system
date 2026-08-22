@@ -1,0 +1,6 @@
+.git
+.env
+vendor
+data/*
+!data/.gitkeep
+PROJECT.mdc
