@@ -65,6 +65,8 @@ composer install
 php bin/check.php
 ```
 
+GitHub Actions (`.github/workflows/ci.yml`): `composer install` + o mesmo check e `docker compose build`.
+
 Smoke da API (stack no ar, chave padrão `dev-secret`):
 
 ```bash
