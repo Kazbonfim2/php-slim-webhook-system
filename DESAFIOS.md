@@ -27,3 +27,7 @@ O dado aqui é lista de URLs + log. Troquei por JSON com `flock`. Roda em qualqu
 ## `php -S` de novo sem o script router
 
 Já tinha me queimado nisso: sem `public/index.php` no comando, POST chega e o body some. Compose sobe com `-t public public/index.php` e opcache desligado no volume, senão edito o PHP e o container serve a versão velha.
+
+## Composer no Docker sem unzip
+
+Imagem `php:8.3-cli` não traz `unzip`. `composer install` no build cai com "zip extension and unzip/7z commands are both missing". Uma linha de `apt-get install unzip` e o lock instala.
